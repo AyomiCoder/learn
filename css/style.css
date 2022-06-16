@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    background-image: url(/images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%) ;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 30% 40%;
+    gap: 20%;
+    margin-top: 7%;
+    margin-left: 14%;
+}
+
+ 
+ .header{
+    width: 140%;
+     font-size: 3rem;
+     font-weight: 900;
+     font-family: 'Poppins', sans-serif;
+     color: white;
+     animation:fadeInUp;
+     animation-duration: 2s;
+     margin-top: 10rem;
+ 
+ }
+ 
+.description{
+     width: 140%;
+     font-size: 15px;
+     color: white;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 400;
+     animation:fadeInUp;
+     animation-duration: 2s;
+ }
+
+.sales{
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    border-radius: 10px;
+    font-family: 'Popins', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    height: 3rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    animation:fadeIn;
+    animation-duration: 3s;
+    margin-bottom: 5%;
+}
+
+.other{
+    color: hsl(248, 26%, 83%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+
+.forms{
+    display: grid;
+    padding: 2rem;
+    background-color: hsl(0, 0%, 100%);
+    height: 25rem;
+    width: 85%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    animation:fadeIn;
+    animation-duration: 3s;
+}
+
+.text-box{
+    width: 23rem;
+    margin-bottom: 3%;
+    padding: 1em;
+    border-radius: 5px;
+    border-color: hsl(248, 15%, 71%);
+}
+
+.claim{
+    width: 100%;
+    margin-left: 0.5%;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+.agreement{
+    color: hsl(248, 15%, 71%);
+    width: 100%;
+    font-size: 10px;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.terms{
+    color: red;
+}
+
+
+/* Responsiveness */
+@media (max-width: 1024px){
+
+    #container{
+        margin-left: 13%;
+    }
+
+    .forms{
+        width: 70;
+        height: 20rem;
+    }
+
+    .sales{
+        width: 105%;
+    }
+
+    .header{
+        margin-top: 25%;
+    }
+
+    .text-box{
+        width: 16.5rem;
+    }
+
+}
+
+@media (max-width: 768px){
+    .header{
+        margin-top: 30%;
+        width: 150%;
+        font-size: 2.5rem;
+    }
+
+    .description{
+        width: 150%;
+    }
+
+    .forms{
+        width: fit-content;
+        height: 19rem;
+    }
+
+    .sales{
+        width: 123%;
+    }
+
+    #container{
+        margin-left: 10%;
+        gap: 15%;
+    }
+ 
+}
+
+@media (max-width: 425px){
+    body{
+        background-image: url(/images/bg-intro-mobile.png);
+        background-color: hsl(0, 100%, 74%);
+    }
+
+
+
+    .header{
+        margin-top: 2%;
+        text-align: center;
+        width: fit-content;
+    }    
+    #container{
+        grid-template-columns: 1fr;
+        gap: 5%;
+    }
+
+    .sales{
+        width: 85%;
+        margin-left: 10%;
+    }
+
+    .description{
+        width: fit-content;
+        font-size: 18px;
+    }
+
+    .forms{
+        width: 70%;
+        height: 22rem;
+        margin-left: 10%;
+    }
+
+    .text-box{
+        width: 16rem;
+    }
+
+    .description{
+        text-align: center;
+        font-size: 19;
+    }
+
+
+    #container{
+        grid-template-columns: 1fr;
+        gap: 5%;
+        margin-left: 0;
+        margin-bottom: 10rem;
+    }
+}
+
+
+@media (max-width: 375px){
+    body{
+        background-image: url(/images/bg-intro-mobile.png);
+        background-color: hsl(0, 100%, 74%);
+    }
+
+
+
+    .header{
+        margin-top: 2%;
+        text-align: center;
+        font-size: 2rem;
+    } 
+    
+    .description{
+        font-size: 16px;
+    }
+    #container{
+        grid-template-columns: 1fr;
+        gap: 5%;
+        /* margin-left: 5%; */
+    }
+
+    .sales{
+        width: 85%;
+        margin-left: 10%;
+    }
+
+    .forms{
+        width: 70%;
+        margin-right: 5%;
+    }
+
+    .text-box{
+        width: 13.5rem;
+        
+    }
+
+    .description{
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 320px){
+    .forms{
+        width: 60%;
+    }
+
+    .sales{
+        width: 80%;
+    }
+    .text-box{
+        width: 10.5rem;
+        height: 1rem;
+        
+    } 
+
+    .header{
+        font-size: 1.5rem;
+    }
+
+    .description{
+        font-size: 13px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
